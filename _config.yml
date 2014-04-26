@@ -1,0 +1,77 @@
+title:            dss886's Blog
+description:      对自己不熟悉的领域保持沉默和谦逊是一个人基本素养
+disqus_shortname: dss886
+comments: true
+share: true
+#Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              http://www.dss886.com
+relative_permalinks: true
+
+
+# Owner/author information
+owner:
+  name:           段思澍 (dss886)
+  avatar:         avatar.jpg
+  bio:            "My name is Xu Jinlai, you can call me Seeksky(my nickname) or Andy(my official english name). My favourite is computer and every thing related to it."
+  email:          xujinlai@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        dss886
+  facebook:       dss886
+  github:         dss886
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:   https://plus.google.com/107552981190643821025
+
+# Background image to be tiled on all pages
+background: ps_neutral.png
+feature: 
+qiniu: 
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-46212341-3
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: CSDN Blog
+    url: http://blog.csdn.net/dss886
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Shanghai
+future:      true
+pygments:    true
+markdown:    kramdown
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough","superscript"]
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:year/:month/:day/:title 
+
+# Amount of post to show on home page
+paginate: 5
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
