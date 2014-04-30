@@ -40,7 +40,7 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: CSDN 博客
+  - title: 我的 CSDN 博客
     url: http://blog.csdn.net/dss886
     external: true
 
