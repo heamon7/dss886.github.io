@@ -30,7 +30,7 @@ $(function() {
     });
 
     var outline_ul = $('<ul style="list-style-type: none"></ul>');
-	outline_ul.append($('<li class="lable"></li>').html('<i class="icon-list-ul"></i>      TOC'));
+	outline_ul.append($('<li class="lable"></li>').html('<i class="icon-list-ul"></i>      文章目录'));
 	outline_menu = $('<li class="menu"></li>');
     $.each(dict, function (idx, val) {
         outline_menu.append($('<li></li>')
