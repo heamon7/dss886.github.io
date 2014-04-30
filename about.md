@@ -4,9 +4,7 @@ date: 2014-5-1 0:15:28
 layout: page
 permalink: /about/
 image:
-  feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: abstract-12.jpg
 share: true
 ---
 
@@ -28,11 +26,11 @@ share: true
 
 ## **我邮**
 
-北邮人论坛（bbs.byr.cn）的Android客户端，目前累计使用人数超过5000人。[http://bbs.byr.cn/#!article/MobileTerminalAT/12992](点击查看)
+北邮人论坛（bbs.byr.cn）的Android客户端，目前累计使用人数超过5000人。[点击查看](http://bbs.byr.cn/#!article/MobileTerminalAT/12992)
 
 ## **EVE市场工具**
 
-EVE游戏的辅助工具，提供实时数据查询和计算、分析数据的功能，目前累计使用人数超过一万人。[http://www.wandoujia.com/apps/com.dss886.evetool](点击查看)
+EVE游戏的辅助工具，提供实时数据查询和计算、分析数据的功能，目前累计使用人数超过一万人。[点击查看](http://www.wandoujia.com/apps/com.dss886.evetool)
 
 # **其他**
 
