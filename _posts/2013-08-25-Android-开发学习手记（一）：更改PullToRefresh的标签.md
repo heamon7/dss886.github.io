@@ -13,7 +13,7 @@ share: true
 
 这篇文章主要介绍如何分别更改PullToRefresh组件的上拉和下滑标签。
 
-PullToRefresh是一个Android上很成熟的下拉刷新的开源控件，目前托管在GitHub上：https://github.com/chrisbanes/Android-PullToRefresh
+PullToRefresh是一个Android上很成熟的下拉刷新的开源控件，目前托管在GitHub上：<https://github.com/chrisbanes/Android-PullToRefresh>
 
 当PullToRefresh的Mode设为BOTH时，即上下都可以刷新时，下拉/上拉默认的英文都是：“Pull to refresh”
 
@@ -27,9 +27,9 @@ PullToRefresh是一个Android上很成熟的下拉刷新的开源控件，目前
 
 	Deprecated. You should now call this method on the result ofgetLoadingLayoutProxy().
 
-调用getLoadingLayoutProxy()，发现它还是只有setPullLabel(String)、setReleaseLabel(String)、setRefreshingLabel(String)等几个方法，设置以后上下的标签都变了，怎么办？
+调用getLoadingLayoutProxy()，发现它还是只有`setPullLabel(String)`、`setReleaseLabel(String)`、`setRefreshingLabel(String)`等几个方法，设置以后上下的标签都变了，怎么办？
 
-研究了俩小时。。。发现除了getLoadingLayoutProxy()，还有这一个：
+研究了俩小时。。。发现除了`getLoadingLayoutProxy()`，还有这一个：
 
 	getLoadingLayoutProxy(boolean includeStart, boolean includeEnd)
 
