@@ -2,7 +2,7 @@
 layout: post
 title: "A Post with Images"
 description: "Examples and code for displaying images in posts."
-tags: [sample post, images, test]
+category: 主题帮助文章
 comments: true
 share: true
 ---

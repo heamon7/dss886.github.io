@@ -5,6 +5,8 @@ description: "Android开发中的一些问题及其解决办法"
 category: Android
 tags: [Android, PullToRefresh]
 date: 2013-08-25 00:56
+image:
+  feature: abstract-6.jpg
 comments: true
 share: true
 ---

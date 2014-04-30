@@ -5,6 +5,8 @@ description: "Android开发中的一些问题及其解决办法"
 category: Android
 tags: [Android, PullToRefresh]
 date: 2013-08-25 01:15
+image:
+  feature: abstract-6.jpg
 comments: true
 share: true
 ---
@@ -16,7 +18,7 @@ share: true
 	}
 	listView.setStackFromBottom(false);
 
-但是，使用PullToRefreshListView以后，发现该对象竟然没有setStackFromBottom()方法！
+但是，使用PullToRefreshListView以后，发现该对象竟然没有`setStackFromBottom()`方法！
 
 翻翻它的源码，发现是这样的：
 

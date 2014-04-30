@@ -2,7 +2,7 @@
 layout: post
 title: "Testing Readability with a Bunch of Text"
 description: "A ton of text to test readability."
-tags: [sample post, readability, test, intro]
+category: 主题帮助文章
 image:
   feature: abstract-6.jpg
   credit: dargadgetz
