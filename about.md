@@ -28,11 +28,11 @@ share: true
 
 ## **我邮**
 
-北邮人论坛（bbs.byr.cn）的Android客户端，目前累计使用人数超过5000人。<http://bbs.byr.cn/#!article/MobileTerminalAT/12992>(点击查看)
+北邮人论坛（bbs.byr.cn）的Android客户端，目前累计使用人数超过5000人。[http://bbs.byr.cn/#!article/MobileTerminalAT/12992](点击查看)
 
 ## **EVE市场工具**
 
-EVE游戏的辅助工具，提供实时数据查询和计算、分析数据的功能，目前累计使用人数超过一万人。<http://www.wandoujia.com/apps/com.dss886.evetool>(点击查看)
+EVE游戏的辅助工具，提供实时数据查询和计算、分析数据的功能，目前累计使用人数超过一万人。[http://www.wandoujia.com/apps/com.dss886.evetool](点击查看)
 
 # **其他**
 
