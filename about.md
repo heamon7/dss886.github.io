@@ -1,6 +1,6 @@
 ---
-title: About Me
-date: 2013-12-01 14:32:07
+title: 关于我
+date: 2014-5-1 0:15:28
 layout: page
 permalink: /about/
 image:
@@ -10,38 +10,30 @@ image:
 share: true
 ---
 
-# **About Seeksky**
+# **关于我**
 
-seeksky是我一直使用的nickname，在最初是单纯的喜欢seek和sky这两个单词，但是这两个单词越发给予我力量
+## **姓名**
 
-# **About Me**
+段思澍
 
-## **Name**
+##  **教育经历**
 
-Jinlai Xu
+我是北京邮电大学信息与通信工程学院大四本科生，计算机学院研零研究生。
 
-## **Recent Developments**
+## **联系方式**
 
-现在我是中国地质大学（武汉）信息工程学院研二的学生
+<dss886@gmail.com>
 
-主要研究方向是云计算基础平台的搭建及优化工作
+# **做过的项目**
 
-## **Email**
+## **我邮**
 
-xujinlai[at]gmail.com
+北邮人论坛（bbs.byr.cn）的Android客户端，目前累计使用人数超过5000人。<http://bbs.byr.cn/#!article/MobileTerminalAT/12992>(点击查看)
 
-## **Social Network**
+## **EVE市场工具**
 
-[http://weibo.com/jinlaixu](http://weibo.com/jinlaixu)
+EVE游戏的辅助工具，提供实时数据查询和计算、分析数据的功能，目前累计使用人数超过一万人。<http://www.wandoujia.com/apps/com.dss886.evetool>(点击查看)
 
-## **Hobby**
+# **其他**
 
-Cartoon, Computer games, Basketball
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-论文ing......
+目前正在积极寻找实习，职位意向：Android开发/Web前端开发/移动游戏开发，如果您是HR或猎头，欢迎邮件我，我将发送我的简历给您。如果您是公司员工，欢迎帮忙内推，谢谢！
