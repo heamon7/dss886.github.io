@@ -28,7 +28,7 @@ share: true
 
 但是，实际上PullToRefreshListView的主体确实是一个ListView，那么如何使用属于ListView的方法呢？
 
-在百度、谷歌搜索了半天，终于在stackoverflow上找到了答案：`Retaining scroll position on Pull To Refresh`
+Google了半天，终于在stackoverflow上找到了答案：`Retaining scroll position on Pull To Refresh`
 
 PullToRefresh为了实现各种不同的View的下拉刷新，并不是简单的继承自ListView，而是采用了泛型。
 

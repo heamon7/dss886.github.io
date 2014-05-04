@@ -11,9 +11,7 @@ comments: true
 share: true
 ---
 
-刚刚接触JavaScript，用的是JQuery 
-
-Mobile框架，很多东西还不熟悉，写的代码难免会想当然得用写Java和Android时的惯性思维。
+刚刚接触JavaScript，用的是 JQuery Mobile 框架，很多东西还不熟悉，写的代码难免会想当然得用写Java和Android时的惯性思维。
 
 今天遇到一个问题，我动态生成了若干个按钮，id命名为`Comment_1`、`Comment_2`……在设置按钮监听的时候，由于按钮总数是无法事先知道的，所以不可能为每一个按钮写一个监听，于是我用了循环来重复设置监听，代码如下：
 
@@ -26,7 +24,7 @@ Mobile框架，很多东西还不熟悉，写的代码难免会想当然得用�
 
 然而，在测试代码的时候发现，第3行一直报错：`Uncaught TypeError: Cannot read property 'cid' of undefined`，即comments[i]未定义。在中间加了一个log输出i，发现点击任何一个按钮，i的值都是commentNum。
 
-这种写法在Java和Android里是正确的，但是为什么在JS里不对了呢？百度了一下，大致明白了一点点。
+这种写法在Java和Android里是正确的，但是为什么在JS里不对了呢？Google了一下，大致明白了一点点。
 
 在Java中，UI的界面事件（比如按钮按下、触摸、滑动）是由虚拟机进行监听的，监听到了点击动作，就一层一层向下传递，直到被按钮接收到，然后进行处理。在Java/Android中这个监听是需要提前向虚拟机进行“注册”的，下面是Android中典型的循环设置监听的代码：
 
