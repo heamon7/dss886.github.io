@@ -13,7 +13,7 @@ share: true
 
 ### 前言
 
-`PullToRefresh`是一个Android上很成熟的下拉刷新的开源控件，目前托管在GitHub上：<https://github.com/chrisbanes/Android-PullToRefresh>
+`PullToRefresh`是一个Android上很成熟的下拉刷新的开源控件，目前托管在`GitHub`上：<https://github.com/chrisbanes/Android-PullToRefresh>
 
 ### 问题
 
@@ -28,9 +28,10 @@ share: true
 ~~~java
 listView.setRefreshingLabel(String refreshingLabel);
 ~~~
+
 然后发现它被弃用了：
 
-~~~java
+~~~
 Deprecated. You should now call this method on the result ofgetLoadingLayoutProxy().
 ~~~
 
@@ -40,7 +41,7 @@ Deprecated. You should now call this method on the result ofgetLoadingLayoutProx
 
 ~~~java
 getLoadingLayoutProxy(boolean includeStart, boolean includeEnd)
-~~~java
+~~~
 
 哦，原来得到`Proxy`的时候可以指定是`Start`还是`End`。
 
