@@ -11,49 +11,65 @@ comments: true
 share: true
 ---
 
-刚刚接触JavaScript，用的是 JQuery Mobile 框架，很多东西还不熟悉，写的代码难免会想当然得用写Java和Android时的惯性思维。
+### 前言
+
+刚刚接触JavaScript，用的是`JQuery Mobile`框架，很多东西还不熟悉，写的代码难免会想当然得用写Java和Android时的惯性思维。
+
+### 问题
 
 今天遇到一个问题，我动态生成了若干个按钮，id命名为`Comment_1`、`Comment_2`……在设置按钮监听的时候，由于按钮总数是无法事先知道的，所以不可能为每一个按钮写一个监听，于是我用了循环来重复设置监听，代码如下：
 
-	for(i = 0; i < commentNum; i++){
-		$('a#Comment_'+i).click(function(){
-			sessionStorage.curComment = comments[i].cid;
-			$.mobile.changePage("commentInfo.html");
-		});
-	}
+~~~javascript
+for(i = 0; i < commentNum; i++){
+	$('a#Comment_'+i).click(function(){
+		sessionStorage.curComment = comments[i].cid;
+		$.mobile.changePage("commentInfo.html");
+	});
+}
+~~~
 
-然而，在测试代码的时候发现，第3行一直报错：`Uncaught TypeError: Cannot read property 'cid' of undefined`，即comments[i]未定义。在中间加了一个log输出i，发现点击任何一个按钮，i的值都是commentNum。
+然而，在测试代码的时候发现，第3行一直报错：`Uncaught TypeError: Cannot read property 'cid' of undefined`，即`comments[i]`未定义。在中间加了一个log输出`i`，发现点击任何一个按钮，`i`的值都是`commentNum`。
 
-这种写法在Java和Android里是正确的，但是为什么在JS里不对了呢？Google了一下，大致明白了一点点。
+这种写法在Java和Android里是正确的，但是为什么在JS里不对了呢？
+
+### 探究
+
+Google了一下，大致明白了一点点。
 
 在Java中，UI的界面事件（比如按钮按下、触摸、滑动）是由虚拟机进行监听的，监听到了点击动作，就一层一层向下传递，直到被按钮接收到，然后进行处理。在Java/Android中这个监听是需要提前向虚拟机进行“注册”的，下面是Android中典型的循环设置监听的代码：
 
-	Button[] buttons = {btn1,btn2,btn3,btn4,btn5};
-		for(int i = 0; i < buttons.length; i++){
-			buttons[i].setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v) {
-				//do something
-			}
-		});
-	}
+~~~java
+Button[] buttons = {btn1,btn2,btn3,btn4,btn5};
+	for(int i = 0; i < buttons.length; i++){
+		buttons[i].setOnClickListener(new OnClickListener(){
+		@Override
+		public void onClick(View v) {
+			//do something
+		}
+	});
+}
+~~~
 
-这段代码在UI界面生成完毕前运行，for循环每循环一次，buttons数组中就有一个按钮都被设置了监听，直到全部设置完毕。UI界面生成完毕后，用户点击每个按钮就会触发对应的动作。
+这段代码在UI界面生成完毕前运行，for循环每循环一次，`buttons`数组中就有一个按钮都被设置了监听，直到全部设置完毕。UI界面生成完毕后，用户点击每个按钮就会触发对应的动作。
 
-然而，与Java不同，JavaScript并没有类似的监听机制，而使用的是看上去很类似的“事件绑定”机制。当一个按钮被按下的时候，click()内的代码才会被执行，而一般用户按下按钮的时候，js内的代码都已经执行完毕了，For循环也早已经循环完毕，这个时候i的值为CommentNum，执行comments[i]就会报错——i超过了数组下标范围。
+然而，与Java不同，JavaScript并没有类似的监听机制，而使用的是看上去很类似的“事件绑定”机制。当一个按钮被按下的时候，`click()`内的代码才会被执行，而一般用户按下按钮的时候，js内的代码都已经执行完毕了，For循环也早已经循环完毕，这个时候`i`的值为`CommentNum`，执行`comments[i]`就会报错——`i`超过了数组下标范围。
+
+### 解决
 
 那么怎么才能给这些按钮设置监听/绑定呢？如果我们仍然要用For循环进行绑定的话，可以使用以下代码：
 
-	for(i = 0; i < commentNum; i++){
-		(function(){
-			var index = i;
-			$('a#Comment_'+index).click(function(){
-				sessionStorage.curComment = comments[i].cid;
-				$.mobile.changePage("commentInfo.html");
-			});
-		 })();
-	 }
- 
-这里利用了JS的闭包原理，每次循环都会新建一个闭包，里面的变量值（在这里是index的值）在运行完毕后并不会被销毁，而是一直保存（参考：JS闭包的作用原理），当你按下按钮时，click()被触发，这个时候index就是其对于的id号了。
+~~~javascript
+for(i = 0; i < commentNum; i++){
+	(function(){
+		var index = i;
+		$('a#Comment_'+index).click(function(){
+			sessionStorage.curComment = comments[i].cid;
+			$.mobile.changePage("commentInfo.html");
+		});
+	})();
+}
+~~~
+
+这里利用了JS的闭包原理，每次循环都会新建一个闭包，里面的变量值（在这里是`index`的值）在运行完毕后并不会被销毁，而是一直保存（参考：[JS闭包的作用原理](http://www.jb51.net/article/24101.htm)），当你按下按钮时，`click()`被触发，这个时候`index`就是其对于的`id`号了。
 
 PS：其实并不推荐这样使用循环绑定事件，过多的闭包会影响性能，最好是用js的事件冒泡机制来实现，有兴趣的可以研究一下。

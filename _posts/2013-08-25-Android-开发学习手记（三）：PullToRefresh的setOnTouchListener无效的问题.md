@@ -13,7 +13,7 @@ share: true
 
 ### 问题
 
-如果直接给`PullToRefreshListView`设置`OnTouch()`，会发现没有反应，这个函数根本没有被调用。
+如果直接给`PullToRefreshListView`设置`OnTouch()`，会发现没有反应：这个函数根本没有被调用。
 
 ### 探究
 
