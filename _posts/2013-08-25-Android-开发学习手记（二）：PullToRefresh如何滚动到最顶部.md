@@ -38,7 +38,7 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 
 ### 原因
 
-Google了半天，终于在`stackoverflow`上找到了答案：`Retaining scroll position on Pull To Refresh`
+Google了半天，终于在`stackoverflow`上找到了答案：[http://stackoverflow.com/questions/15426633/retaining-scroll-position-on-pull-to-refresh](Retaining scroll position on Pull To Refresh)
 
 `PullToRefresh`为了实现各种不同的`View`的下拉刷新，并不是简单的继承自`ListView`，而是采用了泛型。
 

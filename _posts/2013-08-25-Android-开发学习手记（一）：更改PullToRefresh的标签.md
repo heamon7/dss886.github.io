@@ -35,7 +35,13 @@ listView.setRefreshingLabel(String refreshingLabel);
 Deprecated. You should now call this method on the result ofgetLoadingLayoutProxy().
 ~~~
 
-调用`getLoadingLayoutProxy()`，发现它还是只有`setPullLabel(String)`、`setReleaseLabel(String)`、`setRefreshingLabel(String)`等几个方法，设置以后上下的标签都变了，怎么办？
+调用`getLoadingLayoutProxy()`，发现它还是只有
+
++ `setPullLabel(String)`
++ `setReleaseLabel(String)`
++ `setRefreshingLabel(String)`
+
+等几个方法，设置以后上下的标签都变了，怎么办？
 
 研究了俩小时。。。发现除了`getLoadingLayoutProxy()`，还有这一个：
 
