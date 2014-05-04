@@ -38,9 +38,9 @@ Deprecated. You should now call this method on the result ofgetLoadingLayoutProx
 调用`getLoadingLayoutProxy()`，发现它还是只有
 
 ~~~java
-+ `setPullLabel(String)`
-+ `setReleaseLabel(String)`
-+ `setRefreshingLabel(String)`
+setPullLabel(String)
+setReleaseLabel(String)
+setRefreshingLabel(String)
 ~~~
 
 等几个方法，设置以后上下的标签都变了，怎么办？
