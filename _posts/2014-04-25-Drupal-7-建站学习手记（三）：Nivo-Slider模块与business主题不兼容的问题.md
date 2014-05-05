@@ -56,7 +56,9 @@ share: true
 
 找到了这个：<http://blog.csdn.net/dracotianlong/article/details/18195141>
 
-jQuery 1.7版本以后，live接口被删除了，必须换成了on
+jQuery 1.7版本以后，live接口被删除了，必须换成on
+
+### 解决
 
 按照错误提示找到`sites/all/nivo-slider/jquery.nivo.slider.pack.js`
 
