@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Drupal 7 建站学习手记（三）：修改Nivo Slider模块的宽高"
+title: "Drupal 7 建站学习手记（四）：修改Nivo Slider模块的宽高"
 description: "Drupal 网站开发中的一些问题及其解决办法"
 category: Drupal
 tags: [Drupal, Drupal 7, Nivo Slider, 图片, 宽高]
@@ -18,7 +18,7 @@ share: true
 但IE7及以下的浏览器是不支持百分比宽高的，
 
 而我的项目目标用户基本都是使用XP系统，项目需求是必须兼容IE7。
-
+ 
 因此需要对其CSS修改成绝对像素大小。
 
 ### 问题
