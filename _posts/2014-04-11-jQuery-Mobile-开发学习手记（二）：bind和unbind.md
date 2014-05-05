@@ -52,7 +52,7 @@ function tapholdHandler(event) {
 
 ### 解决
 
-解决办法就是在每次绑定之前，先用unbind解绑一次。
+解决办法就是在每次`bind()`绑定之前，先用`unbind()`解绑一次。
 
 ~~~javascript
 for(i = 0; i < bookNum; i++){
