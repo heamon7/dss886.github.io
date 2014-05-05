@@ -3,7 +3,7 @@ layout: post
 title: "jQuery Mobile 开发学习手记（一）：按钮监听"
 description: "jQuery Mobile移动开发中的一些问题及其解决办法"
 category: jQuery Mobile
-tags: [jQuery, jQuery Mobile]
+tags: [jQuery, jQuery Mobile, 按钮, 监听, 事件绑定]
 date: 2014-04-11 16:28
 image:
   feature: abstract-6.jpg
@@ -28,7 +28,13 @@ for(i = 0; i < commentNum; i++){
 }
 ~~~
 
-然而，在测试代码的时候发现，第3行一直报错：`Uncaught TypeError: Cannot read property 'cid' of undefined`，即`comments[i]`未定义。在中间加了一个log输出`i`，发现点击任何一个按钮，`i`的值都是`commentNum`。
+然而，在测试代码的时候发现，第3行一直报错：
+
+~~~
+Uncaught TypeError: Cannot read property 'cid' of undefined
+~~~
+
+即`comments[i]`未定义。在中间加了一个log输出`i`，发现点击任何一个按钮，`i`的值都是`commentNum`。
 
 这种写法在Java和Android里是正确的，但是为什么在JS里不对了呢？
 

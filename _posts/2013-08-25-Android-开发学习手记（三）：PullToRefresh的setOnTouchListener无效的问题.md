@@ -3,7 +3,7 @@ layout: post
 title: "Android 开发学习手记（三）：PullToRefresh的setOnTouchListener()无效的问题"
 description: "Android开发中的一些问题及其解决办法"
 category: Android
-tags: [Android, PullToRefresh]
+tags: [Android, PullToRefresh, Touch, TouchListener, 无效]
 date: 2013-08-25 01:33
 image:
   feature: abstract-6.jpg

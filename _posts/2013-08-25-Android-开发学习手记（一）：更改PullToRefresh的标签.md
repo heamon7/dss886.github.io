@@ -3,7 +3,7 @@ layout: post
 title: "Android 开发学习手记（一）：分别更改PullToRefresh的上下标签"
 description: "Android开发中的一些问题及其解决办法"
 category: Android
-tags: [Android, PullToRefresh]
+tags: [Android, PullToRefresh, 分别, 更改, 标签]
 date: 2013-08-25 00:56
 image:
   feature: abstract-6.jpg

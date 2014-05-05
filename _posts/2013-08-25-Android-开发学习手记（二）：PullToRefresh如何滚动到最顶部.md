@@ -3,7 +3,7 @@ layout: post
 title: "Android 开发学习手记（二）：PullToRefresh如何滚动到最顶部"
 description: "Android开发中的一些问题及其解决办法"
 category: Android
-tags: [Android, PullToRefresh]
+tags: [Android, PullToRefresh, 滚动, 顶部]
 date: 2013-08-25 01:15
 image:
   feature: abstract-6.jpg
