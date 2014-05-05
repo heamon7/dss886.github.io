@@ -27,21 +27,21 @@ share: true
 
 不正常的网页，顶部多了一行空行：
 
-![image1]({{ site.url }}/images/post_images/2014.4/2.jpg)
+![image2]({{ site.url }}/images/post_images/2014.4/2.jpg)
 
 ### 探究
 
 F12审查元素看看：
 
-![image1]({{ site.url }}/images/post_images/2014.4/3.png)
+![image3]({{ site.url }}/images/post_images/2014.4/3.png)
 
 这让我百思不得其解啊，拿修改前的和修改后的文件一行一行的对比，完全没有问题啊！
 
-![image1]({{ site.url }}/images/post_images/2014.4/4.jpg)
+![image4]({{ site.url }}/images/post_images/2014.4/4.jpg)
 
 然后突然看到了的底下状态栏，两个文件好像不一样：
 
-![image1]({{ site.url }}/images/post_images/2014.4/5.jpg)
+![image5]({{ site.url }}/images/post_images/2014.4/5.jpg)
 
 ### 解决
 
@@ -51,7 +51,7 @@ UTF-8 with BOM是什么东西？试着改回成UTF-8试试，改回来果然就�
 
 百度了一下，UTF-8 BOM：
 
-~~~plain
+~~~
 BOM——Byte Order Mark，就是字节序标记
  
 在UCS 编码中有一个叫做"ZERO WIDTH NO-BREAK SPACE"的字符，它的编码是FEFF。而FFFE在UCS中是不存在的字符，所以不应该出现在实际传输中。UCS规范建议我们在传输字节流前，先传输 字符"ZERO WIDTH NO-BREAK SPACE"。这样如果接收者收到FEFF，就表明这个字节流是Big-Endian的；如果收到FFFE，就表明这个字节流是Little- Endian的。因此字符"ZERO WIDTH NO-BREAK SPACE"又被称作BOM。
@@ -71,11 +71,11 @@ UTF- 8编码的文件中，BOM占三个字节。如果用记事本把一个文�
 
 果不其然，Notepad++的保存格式是这样的：
 
-![image1]({{ site.url }}/images/post_images/2014.4/6.png)
+![image6]({{ site.url }}/images/post_images/2014.4/6.png)
 
 Sublime Text 3的保存格式是这样的：
 
-![image1]({{ site.url }}/images/post_images/2014.4/7.jpg)
+![image7]({{ site.url }}/images/post_images/2014.4/7.jpg)
 
 摔！两个编辑器默认的UTF-8根本不是一个东西啊！
 
