@@ -31,14 +31,14 @@ share: true
 
 ~~~css
 .block-nivo-slider img {
-  width: 450;
+  width: 450px;
   height: 250px;
 }
 ~~~
 
 **但是**，`Nivo Slider`在每次幻灯片切换前图片都会变成未拉伸的状态。
 
-这样幻灯片切换的时候就感觉图片在“跳动”。
+幻灯片切换的时候就会感觉图片在“跳动”。
 
 ### 探究
 
@@ -58,7 +58,7 @@ share: true
 
 ~~~css
 .block-nivo-slider img {
-  width: 450;
+  width: 450px;
   max-height: 250px;
   min-height: 250px;
 }
