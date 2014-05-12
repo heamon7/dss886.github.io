@@ -24,22 +24,34 @@ share: true
 
 # **做过的项目**
 
-## **我邮**
+#### **我邮**
 
 北邮人论坛（bbs.byr.cn）的Android客户端，目前累计使用人数超过5000人。[点击查看](http://bbs.byr.cn/#!article/MobileTerminalAT/12992)
 
-## **EVE市场工具**
+#### **EVE市场工具**
 
 EVE游戏的辅助工具，提供实时数据查询和计算、分析数据的功能，目前累计使用人数超过一万人。[点击查看](http://www.wandoujia.com/apps/com.dss886.evetool)
 
-# **其他**
+# **求职**
 
 目前我正在积极寻找实习
 
-职位意向：Android开发/Web前端开发/移动游戏开发
+职位意向：
+
++ Android开发
++ Web前端开发
++ 移动游戏开发
 
 如果您是HR或猎头，欢迎邮件我，我将发送我的简历给您
 
 如果您是公司员工，欢迎帮忙内推
 
 谢谢！
+
+# **捐助**
+
+也欢迎任何形式的捐助 XD
+
+我的支付宝付款链接：
+
+![alipay]({{ site.url }}/images/alipay.png)
